@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+alias -s md="vim"
+alias -s txt="vim"
+alias -s png="feh"
+alias -s jpg="feh"
+alias -s ods="libreoffice --calc"
+alias -s odt="libreoffice --writer"
+
+alias -g ll="ls -l"
+alias -g la="ls -a"
+
