@@ -4,7 +4,7 @@
 
 color=16;
 
-while [ $color -lt 51 ]; do
+while [ $color -lt 52 ]; do
     temp_color=$color;
     while [ $temp_color -lt 245 ]; do
         # Real ugly padding for two-digit nums
