@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Original: https://unix.stackexchange.com/a/124409
+
+color=16;
+
+while [ $color -lt 51 ]; do
+    temp_color=$color;
+    while [ $temp_color -lt 245 ]; do
+        # Real ugly padding for two-digit nums
+        if [ $temp_color -lt 100 ]; then
+            echo -n " "
+        fi
+        echo -en "$temp_color: \\033[38;5;${temp_color}mAZaz\\033[1;38;5;${temp_color}mAZaz\\033[48;5;${temp_color}mAZ\\033[0m "
+        ((temp_color+=36));
+    done
+    ((color++));
+    echo
+done  
+
