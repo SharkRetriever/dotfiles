@@ -1,0 +1,13 @@
+#!/bin/sh
+
+pics_dir='/home/jasper/Pictures/wallpapers'
+i3lock_image="${pics_dir}/abstract-hexagon-mint.png"
+wallpaper_image="${pics_dir}/fox-sunset.jpg"
+
+# alias lock to use image
+alias i3lock="i3lock -u -i ${i3lock_image}"
+
+# set wallpaper
+feh --no-fehbg --bg-fill "${wallpaper_image}"
+# bind keys from ~/.xbindkeysrc
+xbindkeys

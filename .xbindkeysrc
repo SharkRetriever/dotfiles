@@ -1,0 +1,30 @@
+# Shutdown
+"systemctl poweroff"
+    Control+Alt + Delete
+
+"systemctl reboot"
+    Control+Shift+Alt + Delete
+
+# Brightness laptop keyboard
+"sudo light -U 10"
+    XF86MonBrightnessDown
+
+"sudo light -A 10"
+    XF86MonBrightnessUp
+
+# Brightness external keyboard
+"sudo light -U 10"
+    Control + F6
+
+"sudo light -A 10"
+    Control + F7
+
+# Volume both keyboards
+"pamixer -d 2"
+    Control + F2
+
+"pamixer -i 2"
+    Control + F3
+
+"pamixer -t"
+    Control + F4
