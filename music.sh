@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MUS_DIR='/home/jasper/Music'
+MUS_DIR="~/Music"
 
 _get_music_file() {
   query="$@"

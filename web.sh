@@ -1,6 +1,7 @@
 #!/bin/sh
 
 _getquery() {
+  # URL encode
   args="$@"
   modded_query=$(printf '%s' "$args" | xxd -p | sed 's/../%&/g')
   printf '%s' "$modded_query"
